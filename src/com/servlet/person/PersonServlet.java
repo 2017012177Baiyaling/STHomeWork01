@@ -64,11 +64,11 @@ public class PersonServlet extends HttpServlet {
                 select(request,response);
                 break;
         }
-    }
+    }//switch...case没有default确保处理全集【37】
 
     private void listAll(HttpServletRequest request, HttpServletResponse response)throws IOException{
         List<Person> list = new ArrayList<>();
-        RequestDispatcher rd = null;
+        RequestDispatcher rd = null;//初始值
         PersonDao personDao = new PersonDaoImpl();
         list = personDao.listAllPerson();
         request.setAttribute("list",list);

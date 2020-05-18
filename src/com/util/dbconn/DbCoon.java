@@ -4,9 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- * 连接数据库
- */
 public interface DbCoon {
     //连接数据库
     public Connection getConnection();

@@ -14,7 +14,7 @@ public class Users {
     }
 
     public String getUsername() {
-        return username;
+        return username;//返回
     }
 
     public void setUsername(String username) {
@@ -28,6 +28,8 @@ public class Users {
     public void setPassword(String password) {
         this.password = password;
     }
+
+//行与行之间的缩进不一样。【13】
     @Override
     public String toString() {
         return "Users{" +

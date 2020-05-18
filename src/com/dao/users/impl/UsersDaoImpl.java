@@ -16,9 +16,7 @@ public class UsersDaoImpl implements UsersDao{
         this.dbConn = new DbCoonImpl();
     }
     /**
-     * 注册
-     * @param users
-     * @return
+     * 注册-之前也没有注释【5】
      */
     @Override
     public  boolean register(Users users) {
@@ -43,8 +41,6 @@ public class UsersDaoImpl implements UsersDao{
     }
     /**
      * 登录
-     * @param username
-     * @return
      */
     @Override
     public Users selectByName(String username) {
@@ -70,6 +66,6 @@ public class UsersDaoImpl implements UsersDao{
             dbConn.closePreparedStatement(ps);
             dbConn.closeConnection(conn);
         }
-        return users;
+        return users;//最终都有返回值。
     }
 }

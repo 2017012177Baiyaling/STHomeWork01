@@ -11,21 +11,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-/**
- * person对应的数据库操作方法的实现
- * @author asus
- */
+
 public class PersonDaoImpl implements PersonDao{
     private Connection conn;
     private DbCoon dbConn;
     public PersonDaoImpl(){
         this.dbConn = new DbCoonImpl();
     }
-    /**
-     * 增加
-     * @param person
-     * @return
-     */
+
     @Override
     public boolean addPerson(Person person) {
         boolean flag = false;
@@ -48,11 +41,7 @@ public class PersonDaoImpl implements PersonDao{
         }
         return flag;
     }
-    /**
-     *删除
-     * @param id
-     * @return
-     */
+
     @Override
     public boolean delPerson(int id) {
         boolean flag = false;
@@ -74,11 +63,7 @@ public class PersonDaoImpl implements PersonDao{
         return flag;
     }
 
-    /**
-     * 修改
-      * @param person
-     * @return
-     */
+
     @Override
     public boolean updatePerson(Person person) {
         boolean flag = false;
@@ -102,11 +87,7 @@ public class PersonDaoImpl implements PersonDao{
         }
         return flag;
     }
-    /**
-     *查找（根据id）
-     * @param id
-     * @return
-     */
+
     @Override
     public Person selectById(int id) {
         Person person = null;
@@ -135,11 +116,7 @@ public class PersonDaoImpl implements PersonDao{
         return person;
     }
 
-    /**
-     * 模糊查询
-     * @param keyword
-     * @return
-     */
+
     @Override
     public List<Person> select(String keyword){
         List<Person> list = new ArrayList<>();
@@ -172,10 +149,7 @@ public class PersonDaoImpl implements PersonDao{
         }
         return list;
     }
-    /**
-     * 遍历所有
-     * @return
-     */
+
     @Override
     public List<Person> listAllPerson() {
         Person person = null;
@@ -204,4 +178,4 @@ public class PersonDaoImpl implements PersonDao{
         }
         return list;
     }
-}
+}//try...catch...finally齐全

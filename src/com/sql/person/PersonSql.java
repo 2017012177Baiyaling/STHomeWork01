@@ -1,8 +1,5 @@
 package com.sql.person;
-
-/**
- * person类对应的sql语句
- */
+//控制行与行之间的间隔。
 public class PersonSql {
     //增加
     public static String addPerson = "INSERT INTO t_person(name,age,sex) VALUES(?,?,?) ";

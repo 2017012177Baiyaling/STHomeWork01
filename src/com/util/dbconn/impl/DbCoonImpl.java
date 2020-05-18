@@ -4,9 +4,6 @@ import com.util.dbconn.DbCoon;
 
 import java.sql.*;
 
-/**
- *
- */
 public class DbCoonImpl implements DbCoon {
 
     private final String DRIVER = "com.mysql.jdbc.Driver";
@@ -27,18 +24,12 @@ public class DbCoonImpl implements DbCoon {
 
 
     @Override
-    /**
-     * 链接数据库
-     */
     public Connection getConnection() {
         return this.conn;
     }
 
 
     @Override
-    /**
-     * 关闭数据库
-     */
     public void closeConnection(Connection conn) {
         if(conn!=null)
         {
@@ -53,9 +44,6 @@ public class DbCoonImpl implements DbCoon {
 
 
     @Override
-    /**
-     * 关闭预处理结果
-     */
     public void closePreparedStatement(PreparedStatement ps) {
         if(ps!=null)
         {
@@ -70,9 +58,6 @@ public class DbCoonImpl implements DbCoon {
 
 
     @Override
-    /**
-     * 关闭结果集
-     */
     public void closeResultSet(ResultSet rs) {
         if(rs!=null)
         {

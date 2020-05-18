@@ -5,9 +5,6 @@ import com.dao.person.impl.PersonDaoImpl;
 import com.entity.person.Person;
 import org.junit.Test;
 
-/**
- * person的测试类
- */
 public class PersonTest {
     PersonDao personDao = new PersonDaoImpl();
     //测试增加用户
@@ -27,7 +24,7 @@ public class PersonTest {
 
     @Test
     public void testSelect(){
-        String key = "花";
+        String key = "白";
         PersonDao p = new PersonDaoImpl();
         System.out.print (((PersonDaoImpl) p).select(key));
     }

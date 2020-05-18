@@ -1,13 +1,13 @@
 package com.entity.person;
 
 public class Person {
-    //属性
+    
     private int id;
     private String name;
     private int age;
     private String sex;
 
-    //get和set方法
+    //get和set方法---进行备注，以便将来再次进行学习。【9】
     public int getId() {
         return id;
     }
@@ -40,10 +40,7 @@ public class Person {
         this.sex = sex;
     }
 
-    /**
-     * 需要把toString()方法重写。
-     * @return
-     */
+
     @Override
     public String toString() {
         return "Person{" +

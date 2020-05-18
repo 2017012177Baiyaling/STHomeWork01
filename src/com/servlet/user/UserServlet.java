@@ -109,8 +109,7 @@ public class UserServlet extends HttpServlet {
     }
 
     /**
-     * 退出
-     * @param request
+     * 退出---未注释【5】
      */
     private void quit(HttpServletRequest request,HttpServletResponse response)throws IOException{
         HttpSession session = request.getSession();
